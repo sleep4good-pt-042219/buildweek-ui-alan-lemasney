@@ -1,0 +1,60 @@
+.container-home {
+    .section-main-home {
+        background-color: gray;
+        .flex(@justify: flex-start);
+        height: 560px;
+
+        div {
+            .flex(@direction: column;);
+            width: 60%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            width: 60%;
+        }
+    }
+
+    .aside-form-home {
+        position: absolute;
+        top: 120px;
+        right: 180px;
+        height: 600px;
+        width: 400px;
+        border-radius: 6px;
+        box-shadow: 4px 4px rgb(214, 214, 214);
+        border: 2px solid rgb(170, 170, 170);
+        background-color: white;
+    }
+}
+
+.section-bottom-home {
+    .flex(@direction: column;);
+    width: 60%;
+    margin: 20px;
+
+    p {
+        margin-top: 5px;
+    }
+
+    div {
+        width: 50%;
+        margin-top: 10px;
+    }
+    input[type="text"] {
+        width: 79%;
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 20%;
+        
+        a {
+            color: white;
+             font-size: 1.6rem;
+        }
+    }
+}
