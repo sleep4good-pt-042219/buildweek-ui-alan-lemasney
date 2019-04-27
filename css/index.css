@@ -144,12 +144,23 @@ h3 {
 a {
   font-size: 2rem;
   text-decoration: none;
+  color: white;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 button {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .header-home {
   display: flex;
@@ -180,13 +191,20 @@ button {
 .header-home nav a:hover {
   border-bottom: 2px solid white;
 }
+body {
+  background-color: #f7f1ea;
+  height: 800px;
+}
+.container-home {
+  background-image: url("/sleep4good/imgs/home-travel.jpg");
+}
 .container-home .section-main-home {
-  background-color: gray;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   height: 560px;
+  color: #fffcf8;
 }
 .container-home .section-main-home div {
   display: flex;
@@ -208,9 +226,33 @@ button {
   height: 600px;
   width: 400px;
   border-radius: 6px;
-  box-shadow: 4px 4px #d6d6d6;
-  border: 2px solid #aaaaaa;
-  background-color: white;
+  box-shadow: 5px 5px 5px #424242;
+  border: 2px solid #383838;
+  background-color: #fdf6ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .aside-form-home h3 {
+  width: 90%;
+  margin-left: 10px;
+  font-size: 2.4rem;
+}
+.container-home .aside-form-home img {
+  width: 90%;
+  height: 200px;
+  margin: 20px 0;
+}
+.container-home .aside-form-home form {
+  width: 80%;
+}
+.container-home .aside-form-home form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container-home .aside-form-home button {
+  width: 48%;
 }
 .section-bottom-home {
   display: flex;
@@ -224,17 +266,20 @@ button {
   margin-top: 5px;
 }
 .section-bottom-home div {
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
   margin-top: 10px;
 }
 .section-bottom-home input[type="text"] {
-  width: 79%;
-  font-size: 1.6rem;
+  width: 70%;
+  font-size: 1.8rem;
+  height: 36px;
 }
 .section-bottom-home button {
-  width: 20%;
-}
-.section-bottom-home button a {
-  color: white;
-  font-size: 1.6rem;
+  height: 36px;
+  border-radius: 0 5px 5px 0;
+  line-height: 0.8rem;
 }
