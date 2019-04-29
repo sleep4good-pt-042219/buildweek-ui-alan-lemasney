@@ -162,7 +162,12 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-.header-home {
+.tabs .tabs-links .tabs-link-selected {
+  background-color: #ffffff;
+  border: 2px solid white;
+  border-top: 2px solid black;
+}
+.header-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -171,24 +176,24 @@ button {
   background-color: black;
   opacity: 0.4;
 }
-.header-home h3 {
+.header-nav h3 {
   width: 30%;
   color: white;
 }
-.header-home nav {
+.header-nav nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
-.header-home nav a {
+.header-nav nav a {
   margin-left: 25px;
   color: white;
   padding: 3px;
   border-bottom: 2px solid black;
 }
-.header-home nav a:hover {
+.header-nav nav a:hover {
   border-bottom: 2px solid white;
 }
 body {
@@ -282,4 +287,47 @@ body {
   height: 36px;
   border-radius: 0 5px 5px 0;
   line-height: 0.8rem;
+}
+section {
+  margin: 20px;
+}
+section .tabs-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section .tabs-links .tabs-link {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 25px;
+  border: 2px solid #f7f1ea;
+  cursor: pointer;
+}
+section .tabs-links .tabs-link:hover {
+  border: 2px solid white;
+  background-color: #ffffff;
+}
+section .hotel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+section .hotel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: #ddcece;
+  margin: 10px;
+}
+section .hotel-item img {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
 }

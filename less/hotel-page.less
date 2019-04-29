@@ -1,0 +1,41 @@
+section {
+    margin: 20px;
+
+    .tabs-links {
+        .flex();
+
+        .tabs-link {
+            font-size: 30px;
+            padding: 10px;
+            margin-left: 25px;
+            border: 2px solid rgb(247, 241, 234);
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid white;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .hotel-container {
+        .flex(@direction: row;);
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .hotel-item {
+        .flex(@direction: column;);
+        border: 1px solid gray;
+        padding: 10px;
+        background-color: rgb(221, 206, 206);
+        margin: 10px;
+
+        img {
+            margin-top: 20px;
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+}
