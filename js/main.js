@@ -1,4 +1,20 @@
 
+/* Navigation */
+
+window.addEventListener('scroll', function() {
+    let nav = document.querySelector('.header-nav');
+    let navAdjust = document.querySelector('.nav-scroll-adjust')
+    console.log(navAdjust)
+    
+    if(window.pageYOffset > 100) {
+        nav.classList.add('nav-scroll');
+        navAdjust.style.marginTop = "80px";
+    } else {
+        nav.classList.remove('nav-scroll');
+        navAdjust.style.marginTop = 0;
+    }
+})
+
 /* Hotel Page */
 class Tablink {
     constructor(element) {

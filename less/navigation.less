@@ -3,6 +3,11 @@
     height: 80px;
     background-color: black;
     opacity: 0.4;
+    z-index: 1;
+
+    @media @mobile {
+        .flex(@direction: column;);
+    }
 
     h3 {
         width: 30%;
@@ -11,6 +16,10 @@
     nav {
         .flex();
         width: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
 
         a {
             margin-left: 25px;
@@ -24,5 +33,27 @@
 
         }
 
+    }
+}
+
+.nav-scroll {
+    position: fixed                                  !important;
+    top: 0                                           !important;
+    left: 0                                          !important;
+    width: 100%                                      !important;
+    background-color: rgb(247, 241, 234)           !important;
+    opacity: 1                                       !important;
+
+    h3 {
+        color: black                               !important;
+    }
+
+    a {
+        border-bottom: 2px solid rgb(247, 241, 234)    !important;
+        color: black                                   !important;
+
+        &:hover {
+            border-bottom: 2px solid black             !important;
+        }
     }
 }
