@@ -4,12 +4,13 @@ section {
     .tabs-links {
         .flex();
         flex-wrap: wrap;
+        color: @border_color;
 
         .tabs-link {
-            font-size: 30px;
+            font-size: 2.6rem;
             padding: 10px;
             margin-left: 25px;
-            border: 2px solid rgb(247, 241, 234);
+            border: 2px solid @background_main;
             cursor: pointer;
 
             @media @mobile {
@@ -18,8 +19,8 @@ section {
             }
 
             &:hover {
-                border: 2px solid white;
-                background-color: rgb(255, 255, 255);
+                border: 2px solid @color;
+                background-color: @color;
             }
         }
     }
@@ -27,18 +28,20 @@ section {
     .hotel-container {
         .flex(@direction: row;);
         flex-wrap: wrap;
-        background-color: rgb(255, 255, 255);
+        background-color: @color;
     }
 
     .hotel-item {
         .flex(@direction: column;);
-        border: 1px solid gray;
+        border: 1px solid @border_color;
         padding: 10px;
-        background-color: rgb(221, 206, 206);
+        background-color: @background_main;
         margin: 10px;
+        color: @border_color;
 
         &:hover {
-            background-color: lighten(rgb(221, 206, 206), 5%);
+            background-color: lighten(@border_color, 5%);
+            color: @background_main;
         }
 
         img {

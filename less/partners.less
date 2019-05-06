@@ -1,0 +1,135 @@
+
+.partners-container {
+
+    .section-main {
+        background: url("/sleep4good/imgs/partners2.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        margin-left: 0;
+
+        div {
+            .flex(@direction: column;);
+            height: 600px;
+            color: @background_main;
+            position: relative;
+            z-index: 1;
+            flex-wrap: wrap;
+
+            h1 {
+                padding-bottom: 20px;
+
+                @media (max-width: 800px) {
+                    font-size: 4.0rem;
+                }
+            }
+            
+            h3 {
+                @media (max-width: 800px) {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    section:after {
+        position: absolute;
+        content: "";
+        background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
+        opacity: 0.4;
+        height: 600px;
+        top: 100px;
+        width: 100%;
+        left: 0;
+    }
+
+    .section-join {
+        .flex();
+
+        @media (max-width: 800px) {
+                flex-wrap: wrap;
+            }
+
+        div:first-child {
+            width: 50%;
+
+            @media (max-width: 800px) {
+                margin-top: 10px;
+                width: 100%;
+                order: 1;
+            }
+
+            @media @mobile {
+                display: none;
+            }
+
+             img {
+                height: 500px;
+                width: 100%;
+                padding: 10px;
+                border: 2px solid @border_color;
+                border-radius: 5px;
+            }
+        }
+
+        .form-container {
+            width: 50%;
+            .flex(@direction: column; @justify: space-around;);
+            height: 500px;
+            margin-left: 20px;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            div {
+                .flex(@direction: column;);
+                height: 400px;
+                width: 100%;
+                border: 2px solid @border_color;
+                color: @border_color;
+                border-radius: 5px;
+
+                @media (max-width: 800px) {
+                    height: 440px;
+                }
+
+                h2 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+
+                    @media @tablet {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            div:first-child {
+                height: 200px;
+                margin-bottom: 10px;
+
+                @media (max-width: 800px) {
+                    width: 100%;
+                    order: 0;
+                }
+            }
+
+            form {
+                width: 100%;
+                text-align: center;
+
+                p {
+                    margin-top: 5px;
+                }
+                input[type="text"] {
+                    width: 50%;
+                }
+            }
+        }
+       
+    }
+}

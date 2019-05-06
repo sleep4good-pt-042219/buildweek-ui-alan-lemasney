@@ -1,12 +1,8 @@
-.our-mission-nav {
-    
-    header {
-        opacity: 0.3;
-    }
-}
+
 
 .container-our-mission {
     .flex(@justify: flex-start;);
+    color: @border_color;
 
     .img-container {
         margin-top: 100px;
@@ -15,6 +11,11 @@
 
         @media @tablet {
             height: 300px;
+            width: 0;
+        }
+
+        @media @mobile {
+            height: 350px;
         }
 
         img {
@@ -50,7 +51,13 @@
         position: relative;
         
         @media @tablet {
-            width: 100%;
+            width: 80%;
+        }
+
+        @media @mobile {
+            margin-top: -100px;
+            height: 250px;
+            width: 90%;
         }
 
         div {
@@ -64,15 +71,29 @@
                 top: -140px;
                 right: 200px;
                 border: 2px solid black;
+                width: 100%;
+            }
+
+             @media @mobile {
+                width: 100%;
+                
             }
 
             h2 {
                 font-size: 5.6rem;
+
+                @media @mobile {
+                    font-size: 4.0 rem;
+                }
             }
 
             p {
                 font-size: 2.2rem;
                 line-height: 1.5;
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
             }
             
         }
@@ -93,19 +114,27 @@
         }
 
         .sponsor-description {
-            background-color: rgb(194, 194, 194);
+            background-color: @color;
             height: 240px;
             width: 74%;
-            border: 2px solid black;
+            border: 2px solid @border_color;
             .flex();
 
              @media @ipad {
                 display: none;
             }
 
+            &:hover {
+                background-color: @background_main;
+            }
+
             p {
-                color: black;
+                color: @border_color;
                 width: 80%;
+            }
+
+            a {
+                color: @btn_color;
             }
         }
 
@@ -116,7 +145,7 @@
             background-color: white;
             text-align: center;
             padding: 20px;
-            border: 2px solid black;
+            border: 2px solid @border_color;
 
             @media (max-width: 660px) {
                 width: 100%;

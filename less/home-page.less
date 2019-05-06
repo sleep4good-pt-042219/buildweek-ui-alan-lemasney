@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(247, 241, 234);
+    background-color: @background_main;
     height: 800px;
 }
 
@@ -9,7 +9,7 @@ body {
     .section-main-home {
         .flex(@justify: flex-start);
         height: 560px;
-        color: rgb(255, 252, 248);
+        color: @background_main;
 
         @media @ipad {
             height: 280px;
@@ -52,8 +52,9 @@ body {
         width: 400px;
         border-radius: 6px;
         box-shadow: 5px 5px 5px rgb(66, 66, 66);
-        border: 2px solid rgb(56, 56, 56);
-        background-color: rgb(253, 246, 236);
+        border: 2px solid @border_color;
+        background-color: @color;
+        color: @border_color;
         .flex(@direction: column;);
 
         @media @laptop {
@@ -92,10 +93,9 @@ body {
             .flex(@direction: column;);
         }
 
-       h3 {
+       p {
            width: 90%;
            margin-left: 10px;
-           font-size: 2.4rem;
        }
 
        img {
@@ -115,6 +115,7 @@ body {
 
         form {
             width: 80%;
+            color: @border_color;
 
             input {
                 width: 100%;
@@ -128,7 +129,7 @@ body {
         }
 
         button {
-            width: 48%;
+            width: 47%;
 
             @media @tablet {
                 width: 80%;
@@ -151,9 +152,16 @@ body {
     .flex(@direction: column;);
     width: 60%;
     margin: 20px;
+    color: @border_color;
 
     @media @ipad {
         width: 100%;
+    }
+
+    @media @mobile {
+        h3 {
+            font-size: 1.9rem;
+        }
     }
 
     p {
@@ -169,7 +177,6 @@ body {
         width: 70%;
         font-size: 1.8rem;
         height: 36px;
-
     }
 
     button {

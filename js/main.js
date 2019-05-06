@@ -16,6 +16,7 @@ window.addEventListener('scroll', function() {
 })
 
 /* Hotel Page */
+
 class Tablink {
     constructor(element) {
         this.tabElement = element;
