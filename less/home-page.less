@@ -1,0 +1,187 @@
+body {
+    background-color: @background_main;
+    height: 800px;
+}
+
+.container-home {
+    background-image: url("/sleep4good/imgs/home-travel.jpg");
+    
+    .section-main-home {
+        .flex(@justify: flex-start);
+        height: 560px;
+        color: @background_main;
+
+        @media @ipad {
+            height: 280px;
+        }
+
+        div {
+            .flex(@direction: column;);
+            width: 60%;
+
+            @media @ipad {
+                .flex(@direction: column;);
+                width: 100%;
+                height: 500px;
+                margin-left: 10px;
+            }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+
+            @media @mobile {
+                font-size: 5.2rem;
+            }
+        }
+
+        h3 {
+            width: 60%;
+
+            @media @tablet {
+                width: 100%;
+            }
+        }
+    }
+
+    .aside-form-home {
+        position: absolute;
+        top: 120px;
+        right: 180px;
+        height: 600px;
+        width: 400px;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgb(66, 66, 66);
+        border: 2px solid @border_color;
+        background-color: @color;
+        color: @border_color;
+        .flex(@direction: column;);
+
+        @media @laptop {
+            right: 20px;
+        }
+
+        @media @ipad {
+            .flex();
+            position: relative;
+            top: -30px;
+            width: 80%;
+            height: 350px;
+            margin: 0 auto;
+        }
+
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media (max-width: 770px) {
+            .flex(@direction: column;);
+            height: 700px;
+            width: 80%;
+        }
+
+        @media @mobile {
+            position: static;
+            height: 800px;
+            width: 100%;
+            box-shadow: none;
+            border: 0px;
+            border-radius: 0px;
+        }
+
+        div {
+            .flex(@direction: column;);
+        }
+
+       p {
+           width: 90%;
+           margin-left: 10px;
+       }
+
+       img {
+           width: 90%;
+           height: 200px;
+           margin: 20px 0;
+
+            @media (max-width: 770px) {
+            width: 80%;
+            height: 300px;
+        }
+
+            @media @mobile {
+                width: 90%;
+            }
+       }
+
+        form {
+            width: 80%;
+            color: @border_color;
+
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+
+                 @media @ipad {
+                    width: 90%;
+                }
+            }
+
+        }
+
+        button {
+            width: 47%;
+
+            @media @tablet {
+                width: 80%;
+                margin-left: 10px;
+            }
+
+             @media (max-width: 770px) {
+            width: 40%;
+            }
+
+            @media @mobile {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.section-bottom-home {
+    .flex(@direction: column;);
+    width: 60%;
+    margin: 20px;
+    color: @border_color;
+
+    @media @ipad {
+        width: 100%;
+    }
+
+    @media @mobile {
+        h3 {
+            font-size: 1.9rem;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+    }
+
+    div {
+        .flex();
+        width: 60%;
+        margin-top: 10px;
+    }
+    input[type="text"] {
+        width: 70%;
+        font-size: 1.8rem;
+        height: 36px;
+    }
+
+    button {
+        height: 36px;
+        border-radius: 0 5px 5px 0;
+        line-height: 0.8rem;
+    }
+}
