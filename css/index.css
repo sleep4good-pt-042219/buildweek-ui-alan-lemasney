@@ -275,7 +275,7 @@ body {
   height: 800px;
 }
 .container-home {
-  background-image: url("/imgs/home-travel.jpg");
+  background-image: url("imgs/home-travel.jpg");
 }
 .container-home .section-main-home {
   display: flex;
@@ -707,7 +707,7 @@ section .hotel-item img {
   }
 }
 .partners-container .section-main {
-  background: url("/imgs/partners2.jpg");
+  background: url("imgs/partners2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 600px;
